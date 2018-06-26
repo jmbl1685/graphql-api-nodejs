@@ -4,10 +4,11 @@ import express from 'express'
 import config from '../src/config/config'
 import graphiqlExpress from 'express-graphql'
 import { makeExecutableSchema } from 'graphql-tools'
+import { importSchema } from 'graphql-import'
 
 import Movie from '../src/models/movie'
-import typeDefs from './graphql/schema'
 import resolvers from './graphql/resolvers'
+const typeDefs = importSchema(`${__dirname}/graphql/schema.graphql`)
 
 const app = express()
 
