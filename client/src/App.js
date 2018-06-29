@@ -1,8 +1,31 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import GraphqlClient from './GraphqlClient'
+import logo from './logo.svg'
+import './App.css'
 
 class App extends Component {
+
+  Constructor() {
+
+  }
+
+  componentDidMount() {
+
+    GraphqlClient(`
+      query{
+        GetMovie{
+          id
+          name
+          gender
+          ranking
+          year_release
+          cover
+        }
+      }
+    `).then(res => console.log(res.data))
+    
+  }
+
   render() {
     return (
       <div className="App">
@@ -14,8 +37,8 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
