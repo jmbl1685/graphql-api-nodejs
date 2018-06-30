@@ -1,0 +1,71 @@
+*,
+button,
+input,
+label,
+textarea{
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px !important;
+}
+
+.size-img {
+  width: 300px;
+  height: 330px;
+}
+
+.gallery {
+  width:300px;
+  height:200px;
+  position: relative;
+ padding: 0;
+ margin: 0;
+ text-align: center;
+}
+
+.gallery-image{
+cursor:pointer;
+ position: relative;
+ display: block;
+}
+
+.gallery-text{
+   position: absolute;
+   top: 0; right: 0;
+   bottom: 0; left: 0;
+   width: 300px;
+   height: 200px; 
+   text-align: center;
+   background-color: rgba(0,0,0,0.8);
+   opacity: 0;
+   -webkit-transition: opacity 0.6s;
+   -moz-transition: opacity 0.6s;
+   transition: opacity 0.6s;
+    vertical-align:middle;
+    line-height:200px;
+}
+
+.gallery-text:hover{
+   opacity: 1;      
+}
+
+.gallery-text h3{
+   color: white;
+   display: inline-table;
+    vertical-align:middle;
+    line-height:100%;            
+}
+
+
+.probando:hover{
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  filter: brightness(0.5)
+}
+
+.probando{
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  opacity: 1;
+}
+
