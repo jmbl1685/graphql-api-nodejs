@@ -2,7 +2,6 @@
 
 const express = require("express");
 const cors = require("cors");
-const config = require("../src/config/config");
 const graphiqlExpress = require("express-graphql");
 const { makeExecutableSchema } = require("graphql-tools");
 const { importSchema } = require("graphql-import");

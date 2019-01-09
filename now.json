@@ -18,5 +18,8 @@
       "src": "src/server.js",
       "use": "@now/node-server"
     }
-  ]
+  ],
+  "env": {
+    "MONGODB_CONNECTION": "@mlab_mongodb_1"
+  }
 }
