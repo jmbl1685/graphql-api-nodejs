@@ -1,10 +1,12 @@
 {
-  "name": "graphql-server-nodejs",
+  "name": "movies-graphql-api-nodejs",
   "version": "1.0.0",
-  "description": "Movie API example based on GraphQL (Basic)",
+  "description": "Movie API example based on GraphQL [Basic]",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server.js --exec babel-node"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "deploy": "now && now alias"
   },
   "author": "Juan Manuel Batty Linero <jmbl1685@hotmail.com>",
   "license": "ISC",
